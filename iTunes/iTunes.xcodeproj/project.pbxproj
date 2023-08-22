@@ -17,6 +17,8 @@
 		3A7320532A9518A9007C7B45 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320522A9518A9007C7B45 /* NetworkingError.swift */; };
 		3A7320562A95193E007C7B45 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320552A95193E007C7B45 /* AlbumService.swift */; };
 		3A7320592A952E34007C7B45 /* AlbumDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */; };
+		3A73205B2A955688007C7B45 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73205A2A955688007C7B45 /* AlbumTableViewController.swift */; };
+		3A73205D2A9556B8007C7B45 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73205C2A9556B8007C7B45 /* AlbumDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3A7320522A9518A9007C7B45 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		3A7320552A95193E007C7B45 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
 		3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsService.swift; sourceTree = "<group>"; };
+		3A73205A2A955688007C7B45 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
+		3A73205C2A9556B8007C7B45 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7320552A95193E007C7B45 /* AlbumService.swift */,
+				3A73205A2A955688007C7B45 /* AlbumTableViewController.swift */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */,
+				3A73205C2A9556B8007C7B45 /* AlbumDetailViewController.swift */,
 			);
 			path = AlbumDetails;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7320502A9452E0007C7B45 /* AlbumDetail.swift in Sources */,
+				3A73205B2A955688007C7B45 /* AlbumTableViewController.swift in Sources */,
 				3A73204E2A9442B4007C7B45 /* Album.swift in Sources */,
 				3A7320382A943E88007C7B45 /* AppDelegate.swift in Sources */,
 				3A73203A2A943E88007C7B45 /* SceneDelegate.swift in Sources */,
+				3A73205D2A9556B8007C7B45 /* AlbumDetailViewController.swift in Sources */,
 				3A7320532A9518A9007C7B45 /* NetworkingError.swift in Sources */,
 				3A7320562A95193E007C7B45 /* AlbumService.swift in Sources */,
 				3A7320592A952E34007C7B45 /* AlbumDetailsService.swift in Sources */,
