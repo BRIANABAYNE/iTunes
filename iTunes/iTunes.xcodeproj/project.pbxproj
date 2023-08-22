@@ -14,6 +14,9 @@
 		3A7320442A943E89007C7B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7320422A943E89007C7B45 /* LaunchScreen.storyboard */; };
 		3A73204E2A9442B4007C7B45 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73204D2A9442B4007C7B45 /* Album.swift */; };
 		3A7320502A9452E0007C7B45 /* AlbumDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73204F2A9452E0007C7B45 /* AlbumDetail.swift */; };
+		3A7320532A9518A9007C7B45 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320522A9518A9007C7B45 /* NetworkingError.swift */; };
+		3A7320562A95193E007C7B45 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320552A95193E007C7B45 /* AlbumService.swift */; };
+		3A7320592A952E34007C7B45 /* AlbumDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		3A7320452A943E89007C7B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A73204D2A9442B4007C7B45 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		3A73204F2A9452E0007C7B45 /* AlbumDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetail.swift; sourceTree = "<group>"; };
+		3A7320522A9518A9007C7B45 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		3A7320552A95193E007C7B45 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		3A7320362A943E88007C7B45 /* iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				3A7320512A951877007C7B45 /* Service */,
+				3A7320572A952DD2007C7B45 /* AlbumDetails */,
+				3A7320542A95190A007C7B45 /* Album */,
 				3A73204C2A94404A007C7B45 /* Model */,
 				3A73204B2A943F24007C7B45 /* SupportingFiles */,
 				3A73203D2A943E88007C7B45 /* Main.storyboard */,
@@ -84,6 +93,30 @@
 				3A73204F2A9452E0007C7B45 /* AlbumDetail.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3A7320512A951877007C7B45 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A7320522A9518A9007C7B45 /* NetworkingError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A7320542A95190A007C7B45 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				3A7320552A95193E007C7B45 /* AlbumService.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		3A7320572A952DD2007C7B45 /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3A7320582A952E34007C7B45 /* AlbumDetailsService.swift */,
+			);
+			path = AlbumDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +194,9 @@
 				3A73204E2A9442B4007C7B45 /* Album.swift in Sources */,
 				3A7320382A943E88007C7B45 /* AppDelegate.swift in Sources */,
 				3A73203A2A943E88007C7B45 /* SceneDelegate.swift in Sources */,
+				3A7320532A9518A9007C7B45 /* NetworkingError.swift in Sources */,
+				3A7320562A95193E007C7B45 /* AlbumService.swift in Sources */,
+				3A7320592A952E34007C7B45 /* AlbumDetailsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
