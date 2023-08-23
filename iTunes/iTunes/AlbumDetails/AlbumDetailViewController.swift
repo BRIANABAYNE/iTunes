@@ -32,7 +32,7 @@ class AlbumDetailViewController: UIViewController {
     func updateView() { // where do I call this?
         guard let song = tld else { return }
         DispatchQueue.main.sync {
-            self.artistSongImage.image = song.songArt
+            self.artistSongImage.image = song.songArt // finish this 
             self.artistDetailNameLabel.text = song.artistDetailNameLabel
             self.artistAlbumDetailLabel.text = song.artistAlbumDetailLabel
             self.artistTrackDetailsLabel.text = song.artistTrackDetailsLabel

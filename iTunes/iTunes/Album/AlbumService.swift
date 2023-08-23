@@ -5,7 +5,7 @@
 //  Created by Briana Bayne on 8/22/23.
 //
 
-import Foundation
+import UIKit // Need this for image
 
 //https://itunes.apple.com/search?entity=album&limit=25&term=SZA
 // Params
@@ -75,6 +75,20 @@ import Foundation
     } // end of fetch
     
   // https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/24/4d/8d/244d8dc4-ccbf-7297-73ca-c9609004674d/886449183500.jpg/100x100bb.jpg
-      
-
+      // I dont want to hard code this but I'm on sure how to do it.
+      func fetchAlbumImage(with albumArt: String, callback: @escaping (Result<UIImage, NetworkingError>) -> Void) {
+          guard let baseURL = URL(string:"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/24/4d/8d/244d8dc4-ccbf-7297-73ca-c9609004674d/886449183500.jpg/100x100bb.jpg") else { return }
+          var urlRequest = URLRequest(url: baseURL)
+          urlRequest.url?.append(path: albumArt)
+          
+          URLSession.shared.dataTask(with: urlRequest) { imageData,_, error in
+              if let error {
+                  callback(.failure(.invalidURL)); return
+              }
+              guard let imageData else {callback(.failure(.noData)); return }
+              guard let albumArtPicture = UIImage(data: imageData) else {callback(.failure(.unableToDecode)); return }
+              callback(.success(albumArtPicture))
+          }.resume()
+      }
+    
 } // end of Struct
