@@ -74,5 +74,7 @@ import Foundation
         
     } // end of fetch
     
-    
+  // https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/24/4d/8d/244d8dc4-ccbf-7297-73ca-c9609004674d/886449183500.jpg/100x100bb.jpg
+      
+
 } // end of Struct

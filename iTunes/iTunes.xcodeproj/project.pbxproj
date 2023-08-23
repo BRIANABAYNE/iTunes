@@ -20,6 +20,7 @@
 		3A73205B2A955688007C7B45 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73205A2A955688007C7B45 /* AlbumTableViewController.swift */; };
 		3A73205D2A9556B8007C7B45 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73205C2A9556B8007C7B45 /* AlbumDetailViewController.swift */; };
 		3A73205F2A955B24007C7B45 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73205E2A955B24007C7B45 /* AlbumTableViewCell.swift */; };
+		3A7320612A959166007C7B45 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7320602A959166007C7B45 /* ImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3A73205A2A955688007C7B45 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
 		3A73205C2A9556B8007C7B45 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		3A73205E2A955B24007C7B45 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		3A7320602A959166007C7B45 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7320522A9518A9007C7B45 /* NetworkingError.swift */,
+				3A7320602A959166007C7B45 /* ImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				3A73205F2A955B24007C7B45 /* AlbumTableViewCell.swift in Sources */,
 				3A73205D2A9556B8007C7B45 /* AlbumDetailViewController.swift in Sources */,
 				3A7320532A9518A9007C7B45 /* NetworkingError.swift in Sources */,
+				3A7320612A959166007C7B45 /* ImageService.swift in Sources */,
 				3A7320562A95193E007C7B45 /* AlbumService.swift in Sources */,
 				3A7320592A952E34007C7B45 /* AlbumDetailsService.swift in Sources */,
 			);

@@ -10,10 +10,10 @@ import Foundation
 struct AlbumDictionary: Decodable {
     private enum CodingKeys: String, CodingKey {
         case count = "resultCount"
-        case items = "results"
+        case albums = "results"
     }
     let count: Int
-    let items: [Album]
+    let albums: [Album]
 }
 
 struct Album: Decodable {

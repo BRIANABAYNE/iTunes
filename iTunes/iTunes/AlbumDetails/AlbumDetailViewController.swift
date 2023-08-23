@@ -16,23 +16,30 @@ class AlbumDetailViewController: UIViewController {
     @IBOutlet weak var artistAlbumDetailLabel: UILabel!
     @IBOutlet weak var artistTrackDetailsLabel: UILabel!
     @IBOutlet weak var artistDetailSongLabel: UILabel!
+    
+    // MARK: - Properties
+    
+    var tld: Song?
+    
+    
     // MARK: - LifeCycles
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateView() { // where do I call this?
+        guard let song = tld else { return }
+        DispatchQueue.main.sync {
+            self.artistSongImage.image = song.songArt
+            self.artistDetailNameLabel.text = song.artistDetailNameLabel
+            self.artistAlbumDetailLabel.text = song.artistAlbumDetailLabel
+            self.artistTrackDetailsLabel.text = song.artistTrackDetailsLabel
+            self.artistDetailSongLabel.text = song.artistDetailSongLabel
+        }
     }
-    */
+
+   
 
 }

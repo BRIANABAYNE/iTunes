@@ -19,16 +19,26 @@ class AlbumTableViewCell: UITableViewCell {
     @IBOutlet weak var artistSongLabel: UILabel!
     
     
+    
+    // MARK: - Properties
+    
+
 // MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(with album: Album) {
+        DispatchQueue.main.async {
+            self.albumArtImageView
+            self.artistNameLabel.text = album.artistName
+            self.albumNameLabel.text = album.album
+            self.tractCountLabel.text = "/album.tractCount" // feel like this is wrong
+            self.artistSongLabel.text = album.songName
+        }
     }
+    
 
-}
+
+} // end of TableViewCell
